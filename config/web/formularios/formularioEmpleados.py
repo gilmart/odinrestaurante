@@ -41,5 +41,5 @@ class FormularioEmpleados(forms.Form):
         #required=True,
         label='Contacto email',
         max_length=10,
-        widget=forms.TextInput(attrs={'class': 'form-control mb-3'})
+        widget=forms.TextInput(attrs={'class': 'form-control mb-3','style': 'text-area:both-resize'})
     )

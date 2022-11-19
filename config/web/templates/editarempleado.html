@@ -18,19 +18,26 @@
     </header>
 <br><br><br><br><br><br>
 
+
+<h2 class="">Editar Empleados</h2>
+
+   
 <section>
     <div class="container ">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            {% for plato in platos %}
+            {% for empleado in empleado %}
             <div class="col">
                 <div class="card h-100">
-                    <img src={{plato.imagen}} class="card-img-top w-100" alt="...">
+                    <img src={{empleado.imagen}} class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3>Nombre del plato: {{plato.nombre}}</h3>
-                            <p>{{plato.descripcion}}</p>
+                            <h3>Nombre:  {{empleado.nombre}}</h3>
+                            <h3>Apellido: {{empleado.apellido}}</h3>
+                            <h6>Cargo: {{empleado.cargo}}</h4>
+                            <h6>Salario: ${{empleado.salario}}</h4>
+
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Precio: ${{plato.precio}}</li>
-                                <li class="list-group-item">Tipo de plato: {{plato.tipo}}</li>
+                                <li class="list-group-item">Telefono: ${{empleado.telefono}}</li>
+                                <li class="list-group-item">Email: {{empleado.email}}</li>
                             </ul>
                         </div>  
                 </div>
@@ -41,6 +48,7 @@
         </div>
     </div>
 </section>
+
 
 
     <footer>

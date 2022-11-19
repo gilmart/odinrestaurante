@@ -2,7 +2,7 @@ from django.shortcuts import render
 from web.formularios.formularioPlatos import FormularioPlatos
 from web.formularios.formularioEmpleados import FormularioEmpleados
 from web.models import Platos
-from web.models import Empleados
+from web.models import Empleado
 
 # Create your views here.
 
@@ -21,6 +21,7 @@ def PlatosVista(request):
         'formulario':formulario,
         'bandera':False,
         'platos': platosConsultados
+
     }
 
     if request.method == 'POST':
@@ -65,7 +66,7 @@ def EmpleadosVista(request):
             datosLimpios=datosFormularioEmpleado.cleaned_data
             print(datosLimpios)
 
-            empleadoNuevo=Empleados(
+            empleadoNuevo=Empleado(
                 nombre=datosLimpios['nombre'],
                 apellido=datosLimpios['apellido'],
                 imagen=datosLimpios['imagen'],
@@ -90,9 +91,18 @@ def EmpleadosVista(request):
 def EditarMenu(request):
     platosConsultados=Platos.objects.all()
     print(platosConsultados)
+   
     data={
-    
         'platos':platosConsultados
     }
+   
+
     return render(request, 'editarmenu.html',data)
 
+def EditarEmpleado(request):
+    empleadoConsultados=Empleado.objects.all()
+    print(empleadoConsultados)
+    data={
+        'empleado':empleadoConsultados
+    }
+    return render(request, 'editarempleado.html',data)

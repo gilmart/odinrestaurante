@@ -27,7 +27,7 @@
 
             </div>
                 <video onloadedmetadata="this.muted=true" autoplay="true" loop="true" class="">
-                    <source src="../static/img/videoburger.mp4">
+                    <source src="https://firebasestorage.googleapis.com/v0/b/odinrestaurante.appspot.com/o/videoburger.mp4?alt=media&token=50f2f6b4-d751-4b6f-a8c7-15f3512d5dae">
                 </video>
             </div>
         </section>
@@ -81,16 +81,16 @@
                     <h2 class="mb-3 nuestrosplatostexto">Nuestros Platos</h2>
                 </div>
                 <div class="col-12 col-md-3">
-                    <img src="../static/img/pizzacarta.jpg" alt="" class="wow animate__animated animate__fadeInLeft animate_slow zoom w-100 rounded" href="{% url 'platos' %}">
+                    <img src="../static/img/pizzacarta.jpg" alt="" class="wow animate__animated animate__fadeInLeft animate_slow zoom w-100 rounded" >
                 </div>
                 <div class="col-12 col-md-3">
-                    <img src="../static/img/burgercarta1.jpg" alt="" class="zoom  w-100 rounded" href="{% url 'platos' %}">
+                    <img src="../static/img/burgercarta1.jpg" alt="" class="zoom  w-100 rounded">
                 </div>
                 <div class="col-12 col-md-3">
-                    <img src="../static/img/trago.jpg" alt="" class="wow animate__animated animate__fadeInRight animate_slow zoom  w-100 rounded" href="{% url 'platos' %}">
+                    <img src="../static/img/trago.jpg" alt="" class="wow animate__animated animate__fadeInRight animate_slow zoom  w-100 rounded" >
                 </div>
                 <div class="col-12 text-center mt-4">
-                    <a href="#" class="btn btn-outline-light">Ver Menú</a>
+                    <a href="{% url 'editarmenu' %} " class="btn btn-outline-light">Ver Menú</a>
                 </div>
             </div>
         </div>
