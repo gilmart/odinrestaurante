@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.videoclase{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+video {
+    width: 100%;
+}
+
+.absolute{
+    width: 100%;
+    height: 100%;
+    top:0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5cm;
+
+
+}
+
+h1{
+    font-size: 120px;
+    font-weight: 900;
+    z-index: 100;
+    color: #fff;
+    margin-bottom: 30px;
+    word-spacing:100vw;
+    width: 100%;
+    line-height: 16vh;
+
+}
+
+h1::after{
+    display: block;
+    width: 30%;
+    height: 10px;
+    content: "";
+    margin: auto;
+    background: #fff;
+}
+
+.nuestrosplatostexto{
+    font-size: 80px;
+    font-weight: 90;
+    z-index: 100;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 100%;
+    line-height: 16vh;
+
+}
+
+.nuestrosplatostexto::after{
+    display: block;
+    width: 30%;
+    height: 10px;
+    content: "";
+    margin: auto;
+    background: #fff;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.575);
+
+}
+
+.menu{
+ background-color: rgb(20, 19, 26);   
+}
+.textoalinearmenu{
+    float: right
+}
+
+h2{
+    color: black;
+}
+
+.zoom{
+    transition: transform .5s;
+}
+
+.zoom:hover{
+    transform: scale(1.1);
+}
+
+.margen{
+    margin-right: auto;
+    margin-left: auto;
+    padding:1px;
+}
+
+/*
+   background-size: 100%;
+    margin-bottom: auto;
+    position: relative;
+    margin-left: 15%;
+*/
+
+footer{
+    background-color: rgb(241, 185, 1);
+}
+li{
+    list-style: none;
+}
+
+.imagenbannermenu{
+    background-color: rgb(241, 199, 11);
+    height: auto;
+    background-attachment: fixed;
+}
+
+.menuplatos{
+    margin-right: 10%;
+    align-items: center;
+
+}
+.empleadosbanner{
+    background-image: url('../img/empleadosbanner.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 7% 45% 30% 1%;
+    position: relative;
+    z-index: 1;
+}
+
+.empleadosbanner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.menuform{
+position: relative;
+background-size: cover;
+}

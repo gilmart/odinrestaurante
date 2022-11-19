@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light menu navbar-dark fixed-top ">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="https://firebasestorage.googleapis.com/v0/b/odinrestaurante.appspot.com/o/Logo2.png?alt=media&token=6880bb20-7d4d-4ce4-9962-e20e52bbd333" alt="" width="80" height="80" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse align-items-center " id="navbarNav">
+        <ul class="navbar-nav textoalinearmenu">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'platos' %}">Registrar Platos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'empleados' %}">Registrar Empleados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'editarmenu' %}">Editar Menu</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
